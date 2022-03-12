@@ -1,0 +1,244 @@
+/*전체*/
+	*{
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+	body { background-color: white; }
+/*상단 메뉴*/
+	header {
+	    width: 100%;
+	    height: 80px;
+	    background: #553C8B;
+	    position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 10;
+  		text-align: center;
+  		/*margin: 0; padding: 0;*/
+	}
+	header a {
+	    list-style-type: none;
+	    text-decoration: none;
+	}
+	header img {
+		float: left;
+		width: 80px;
+		padding: 10px;
+	}
+	nav { text-align: center; }
+	nav li { display: inline; }
+	nav a {
+	    display: inline-block;
+	    text-decoration: none;
+	    list-style-type: none;
+	    border-radius: 10px;
+	    text-align: center;
+	    padding: 10px 50px;
+	    font-family: 'Nanum Gothic', sans-serif;
+	    font-size: 20px;
+	    color: white;
+	    margin-top: 20px;
+	}
+	nav a:hover {
+		color: #ffdb00;
+	    font-size: 21px;
+	}
+	/*메인 이미지*/
+	.index {
+		width: 100%;
+		position: relative;
+		top: 70px;
+	}
+	.index img { width: 100%; }
+	.indexText {
+		position: absolute;
+    	top: 50px;
+    	left: 30px;
+    	font-size: 50px;
+    	font-family: 'Jua', sans-serif;
+    	color: white;
+	}
+	.indexTitle { line-height: 50px; }
+	.indexTitle #name { color: #ffdb00; }
+	.indexText #indexSub {
+		font-family: 'Nanum Gothic', sans-serif;
+		font-size: 15px;
+		color: white;
+	}
+	.btnGo {
+		height: 50px;
+		line-height: 20px;
+		border-radius: 30px;
+		display: inline-block;
+		text-align: center;
+		line-height: 50px;
+		font-size: 25px;
+		background-color: #ffdb00;
+	}
+	.btnGo a {
+		text-decoration: none;
+		list-style-type: none;
+		color: black;
+	}
+	.index .btnGo { width: 180px; }
+	.property .btnGo, .count .btnGo { width: 350px; }
+	.cbotStart .btnGo  { width: 250px; font-size: 30px;}
+/*인트로*/
+	.intro {
+		position: relative;
+		top: 60px;
+		padding: 60px;
+		text-align: center;
+	}
+	.introBox, .introText { display: flex; justify-content: space-around; }
+	.introBox img {
+		display: inline-block;
+		width: 100px;
+	}
+	.introText {
+		font-family: 'Jua', sans-serif;
+		font-size: 24px;
+	}
+/*평당가 분석*/
+	.property {
+		position: relative;
+		top: 50px;
+		width: 100%;
+		height: 500px;
+		background-color: #EDF7FA;
+		padding: 5%;
+	}
+	.propertyImg img {
+		float: left;
+		width: 50%;
+		border-radius: 30px;
+		box-shadow: 3px 3px 5px 3px grey;
+	}
+	.propertyText {
+		float: right;
+		text-align: right;
+		display: inline-block;
+		font-family: 'Nanum Gothic', sans-serif;
+		font-weight: bold;
+		font-size: 30px;
+	}
+/*거래량 분석*/
+	.count {
+		position: relative;
+		top: 50px;
+		width: 100%;
+		height: 480px;
+		background-color: #BCC1F7;
+		padding: 5%;
+	}
+	.countImg img {
+		float: right;
+		width: 50%;
+		border-radius: 30px;
+		box-shadow: 3px 3px 5px 3px grey;
+	}
+	.countText {
+		float: left;
+		text-align: left;
+		display: inline-block;
+		font-family: 'Nanum Gothic', sans-serif;
+		font-weight: bold;
+		font-size: 30px;
+	}
+/*챗봇 소개*/
+	.cbotIntro {
+		position: relative;
+		top: 50px;
+		width: 100%;
+		height: 530px;
+		background-color: #EDF7FA;
+		padding: 5%;
+	}
+	.cbotIntroImg img {
+		float: left;
+		width: 50%; /*임시로 크기 키워둠*/
+		border-radius: 30px;
+		box-shadow: 3px 3px 5px 3px grey;
+	}
+	.cbotIntroText {
+		float: right;
+		text-align: right;
+		display: inline-block;
+		font-family: 'Nanum Gothic', sans-serif;
+		font-weight: bold;
+		font-size: 30px;
+	}
+	.cbotIntroSub {
+		float: right;
+		text-align: right;
+		display: inline-block;
+		font-family: 'Nanum Gothic', sans-serif;
+		font-size: 17px;
+	}
+/*챗봇 시작*/
+	.cbotStart {
+		position: relative;
+		top: 50px;
+		width: 100%;
+		height: 270px;
+		background-color:#BCC1F7;
+		padding: 5%;
+		text-align: center;
+	}
+	.cbotStartText {
+		text-align: center;
+		display: inline-block;
+		font-family: 'Jua', sans-serif;
+		font-size: 45px;
+		line-height: 70px;
+	}
+/*광고*/
+	/* INPUT 가리기 */
+	.section {
+		position: relative;
+		top: 42px;
+		clear: both;
+		height: 110px;
+	}
+	.section [id*="slide"] {display:none;}
+	
+	/* 슬라이드 영역 - max-width 크기를 조절해주면 됩니다*/
+	.section .slidewrap {max-width:70%;margin:0 auto;margin-top:30px;overflow:hidden;position:relative;}
+	.section .slidelist {white-space:nowrap;font-size:0;}
+	.section .slidelist > li {display:inline-block;vertical-align:middle;width:100%;transition:all .5s;}
+	.section .slidelist > li > a {display:block;position:relative;}
+
+	/* 좌우로 넘기는 LABEL버튼에 대한 스타일 */
+	.section .slide-control {position:absolute;top:0;left:0;z-index:10;width:100%;height:100%;}
+	.section .slide-control label {position:absolute;z-index:1;top:50%;transform:translateY(-50%);padding:50px;cursor:pointer;}
+	.section .slide-control .left {left:0px;background:url('./image/left.png') center center / 50% no-repeat;}
+	.section .slide-control .right {right:0px;background:url('./image/right.png') center center / 50% no-repeat;}
+	.section .slide-control [class*="control"] {display:none;}
+
+	/* INPUT이 체크되면 변화값이 li까지 전달되는 스타일 */
+	.section [id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}
+	.section [id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}
+	.section [id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}
+	
+	/*  INPUT이 체크되면 변화값이 좌우 슬라이드 버튼을 담고 있는 div 까지 전달되는 스타일 */
+	.section [id="slide01"]:checked ~ .slidewrap .control01 {display:block;}
+	.section [id="slide02"]:checked ~ .slidewrap .control02 {display:block;}
+	.section [id="slide03"]:checked ~ .slidewrap .control03 {display:block;}
+
+	.slidelist img { width: 100%; }
+/*푸터*/
+	footer{
+		position: relative;
+		top: 30px;
+	    width: 100%;
+	    background-color: #343638;
+	    color: white;
+	    float: left;
+	    text-align: center;
+	    margin-top: 20px;
+	    padding: 30px;
+	    font-size: 12px;
+	    line-height: 30px;
+	}

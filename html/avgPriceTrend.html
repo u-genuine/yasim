@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/avgPriceTrend.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Gothic&family=Noto+Serif+KR&display=swap" rel="stylesheet">
+
+	<title></title>
+
+	<script type="text/javascript">
+
+		window.addEventListener("load", function() {
+	    	var section = document.querySelector("#section");
+	    	var guSrc = section.querySelector(".guSrc");
+	    	var btn = section.querySelector(".btn");
+	    	var img = section.querySelector(".img");
+	    	var span = section.querySelector(".span");
+	 
+	    	btn.onclick = function () {
+	    	   img.src = "image/"+guSrc.value+".png";
+	    	   span.innerHTML=guSrc.value;
+	    	   console.log(img.className);
+	    	}
+		});
+
+	</script>
+</head>
+<body>
+	<!--상단바-->
+	<header>
+		<a href="../index.html" class="logo"><img src="../image/logo.png"></a>
+		<nav>
+			<ul>
+				<li><a href="avgPrice.html"><b>평당가 비교</b></a></li>
+				<li><a href="avgPriceMap.html"><b>평당가 지도</b></a></li>
+				<li><a href="avgPriceTrend.html"><b>평당가 시세 트렌드</b></a></li>
+		        <li><a href="countYear.html"><b>년도별 거래량</b></a></li>
+		        <li><a href="countMonth.html"><b>월별 거래량</b></a></li>
+    		</ul>
+    	</nav>
+	</header>
+
+	<!-- 타이틀 -->
+	<p class="title">최근 5년간 서울시 자치구별 아파트 매매 평당가 시세 트렌드</p>
+
+	<!-- 평당가 시세 트렌드 -->
+	<section id="section">
+	<div>
+		<label class="label">원하는 구를 입력하거나 목록에서 선택해보세요:</label>
+		<input class="guSrc" type="text" list="guList">
+		<datalist id="guList">
+			<option value="강남구"></option>
+		 	<option value="강동구"></option>
+		 	<option value="강북구"></option>
+		 	<option value="강서구"></option>
+		 	<option value="관악구"></option>
+
+		 	<option value="광진구"></option>
+		 	<option value="구로구"></option>
+		 	<option value="금천구"></option>
+		 	<option value="노원구"></option>
+		 	<option value="도봉구"></option>
+
+		 	<option value="동대문구"></option>
+		 	<option value="동작구"></option>
+		 	<option value="마포구"></option>
+		 	<option value="서대문구"></option>
+		 	<option value="서초구"></option>
+
+		 	<option value="성동구"></option>
+		 	<option value="성북구"></option>
+		 	<option value="송파구"></option>
+		 	<option value="양천구"></option>
+		 	<option value="영등포구"></option>
+
+		 	<option value="용산구"></option>
+		 	<option value="은평구"></option>
+		 	<option value="종로구"></option>
+		 	<option value="중구"></option>
+		 	<option value="중랑구"></option>
+		</datalist>
+		<input class="btn" type="button" value="&nbsp&nbsp보기&nbsp&nbsp"/>
+	</div>
+	<br><br>
+	<div>
+		<p class="subTitle"><span class="span">강남구</span> 아파트 매매 평당가 시세 트렌드(2016~2020)</p>
+		<img class="img" src="image/강남구.png">
+	</div>
+	</section>
+
+	<!--푸터-->
+    <footer>
+    	<p>
+    		서울특별시 성동구 살곶이길 200 한양여자대학교 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    		학과 : 스마트 IT과 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 대표자 : 야심 <br>
+    		학번 : 1901714 | 1901749 | 1902615 | 1901816 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    		채널 : @yasim &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 이메일 : hello.yasim@gmail.com<br>
+            ©야심 &nbsp;&nbsp;&nbsp;&nbsp; COPYRIGHT HYWU YASIM. ALL RIGHTS RESERVED.<br>
+       </p>
+    </footer>
+
+</body>
+</html>

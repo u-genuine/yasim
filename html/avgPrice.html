@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/avgPrice.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Gothic&family=Noto+Serif+KR&display=swap" rel="stylesheet">>
+
+	<title></title>
+
+	<!-- <script type="text/javascript"　src="https://code.jquery.com/jquery-2.1.0.min.js"></script> -->
+
+	<script type="text/javascript">
+	
+	function ChangeTrade(){
+		document.getElementById("titleId").innerHTML="2020~2021 서울 자치구별 아파트 매매 실거래가 평당 평균가";
+		document.getElementById("imgId").src = "image/tradePrice.png";
+		document.getElementById("textId").innerHTML="<p class='info'>2020-2021년 아파트 매매 실거래 평당 평균가 중 가장 높은 가격을 보인 지역은 강남구로 7000만원대 초반을 기록했다.<br>서초구가 6000만원대 후반을 기록하며 그 뒤를 이었고, 송파, 용산, 성동이 5000만원대로 줄지어 따랐다.<br>반면, 도봉구가 2000만원 중후반대로 가장 낮은 가격을 보였다.<br>도봉구와 강남구의 평당 평균가는 3배 가까이 차이를 보였다.<br></p><br><p class='addInfo'>*한국부동산원이 8월 전국 주간 아파트가격 동향을 조사한 결과 매매 가격은 0.30% 상승한 것으로 밝혀졌다.<br>*지난 8월 서울 아파트 주간 상승률은 2년 11개월 만에 최고치를 기록했다.</p>";
+	}
+
+	function ChangeRent(){
+		document.getElementById("titleId").innerHTML="2020~2021 서울 자치구별 아파트 전세 실거래가 평당 평균가";
+		document.getElementById("imgId").src = "image/rentPrice.png";
+		document.getElementById("textId").innerHTML="<p class='info'>2020-2021년 아파트 전세 실거래가 평당 평균가는 강남구가 3000만원대로 가장 높았으며 서초구가 그 뒤를 이었다.<br>1년간 서울 자치구별 아파트 전세 실거래가 평당 평균가는 대체로 2000-3000만원 수준이다.<br>	도봉구와 노원구의 평당 평균가는 1000만원 중반으로, 서울 자치구중 평당 평균가가 가장 낮으며<br>강남구와 서초구의 평당 평균가와 거의 2배 이상의 차이를 보였다.<br></p><br><p class='addInfo'>	*한국부동산원이 8월 전국 주간 아파트가격 동향을 조사한 결과 전세 가격은 0.19% 상승한 것으로 밝혀졌다.</p>";
+	}
+
+	function ChangeTotalTrade(){
+		document.getElementById("totalTitleId").innerHTML="2020~2021 서울 자치구별 주택별 매매 실거래가 평당가 비교";
+		document.getElementById("totalImgId").src = "image/tradePriceTotal.png";
+		document.getElementById("totalTextTd").innerHTML="<p class='info'>2020-2021년 주택별 매매 실거래 평당가는 중구를 제외한 모든 자치구에서 아파트 평당가가 월등히 높은 가격을 보였다.<br>이러한 측면에서 다른 주택에 비해 아파트의 선호도가 높고 수요가 많다는 것을 실감할 수 있다.<br>아파트 가격은 강남구가 월등히 높은 양상을 보이며 오피스텔 가격은 노원구가 월등히 낮은 양상을 보였다.<br>아파트를 제외한 오피스텔, 단독다가구, 연립다세대 모두 용산구가 가장 높은 가격을 보였다.<br>용산구는 서울의 중심부이고 부동산 전문가들이 인정하는 향후 모습이 기대되는 지역 1순위이다.<br>오피스텔을 제외한 아파트, 단독다가구, 연립다세대 모두 도봉구가 가장 낮은 가격을 보였다.<br>도봉구는 낮은 가격을 보이는 반면, 지난 1년 동안 서울에서 가장 높은 집값 상승세를 보인 지역이기도 하다.<br>이는 고가 주택에 집중된 규제와 재건축·교통 호재에 대한 기대감이 반영된 결과이다.</p>";
+	}
+
+	function ChangeTotalRent(){
+		document.getElementById("totalTitleId").innerHTML="2020~2021 서울 자치구별 주택별 전세 실거래가 평당가 비교";
+		document.getElementById("totalImgId").src = "image/rentPriceTotal.png";
+		document.getElementById("totalTextTd").innerHTML="<p class='info'>2020-2021년 주택별 전세 실거래 평당가는 연립다세대와 오피스텔의 경우 서초구가 가장 높고, 단독다가구와 아파트는 강남구가 가장 높다.<br>아파트와 단독다가구 전세 실거래 평당가가 제일 낮은 지역은 도봉구이고, 오피스텔과 연립다세대는 노원구가 낮았다.<br>	도봉구의 경우 재개발의 가능성이 낮아 이러한 가격 추이를 띄는 것으로 보인다.<br>노원구는 각종 아파트가 많고, 주거를 목적으로 하는 사람들이 많기 때문에 오피스텔의 가격이 비교적 낮을 수밖에 없다.<br>전체적으로 단독다가구의 전세 평당가가 제일 낮고 아파트와 오피스텔의 전세 평당가가 높으며 연립다세대는 지역별로 조금씩 차이를 보였다.<br>서울 단독다가구와 아파트 오피스텔의 가격은 자치구별 약 1.5-2배 정도 차이난다.</p>";
+	}
+
+	</script>
+</head>
+<body>
+	<!--상단바-->
+	<header>
+		<a href="../index.html" class="logo"><img src="../image/logo.png"></a>
+		<nav>
+			<ul>
+				<li><a href="avgPrice.html"><b>평당가 비교</b></a></li>
+				<li><a href="avgPriceMap.html"><b>평당가 지도</b></a></li>
+				<li><a href="avgPriceTrend.html"><b>평당가 시세 트렌드</b></a></li>
+		        <li><a href="countYear.html"><b>년도별 거래량</b></a></li>
+		        <li><a href="countMonth.html"><b>월별 거래량</b></a></li>
+    		</ul>
+    	</nav>
+	</header>
+
+	<!-- 타이틀 -->
+	<p class="title">최근 1년간 서울 자치구별 매매 평당가 / 전세 평당가</p>
+
+	<!-- 평당가 그래프 -->
+	<div class="price">
+		<div class="btnGo" onclick="ChangeTrade()">매매 평당가 그래프</div>
+		<div class="btnGo" onclick="ChangeRent()">전세 평당가 그래프</div>
+		<br><br>
+		<p id="titleId" class="subTitle">2020~2021 서울 자치구별 아파트 매매 실거래가 평당 평균가</p>
+		<img id="imgId" src="image/tradePrice.png">
+		<br>
+		<div id="textId">
+			<p class="info">
+				2020-2021년 아파트 매매 실거래 평당 평균가 중 가장 높은 가격을 보인 지역은 강남구로 7000만원대 초반을 기록했다.<br>
+				서초구가 6000만원대 후반을 기록하며 그 뒤를 이었고, 송파, 용산, 성동이 5000만원대로 줄지어 따랐다.<br>
+				반면, 도봉구가 2000만원 중후반대로 가장 낮은 가격을 보였다.<br>
+				도봉구와 강남구의 평당 평균가는 3배 가까이 차이를 보였다.<br>
+			</p>
+			<br>
+			<p class="addInfo">
+				*한국부동산원이 8월 전국 주간 아파트가격 동향을 조사한 결과 매매 가격은 0.30% 상승한 것으로 밝혀졌다.<br>
+				*지난 8월 서울 아파트 주간 상승률은 2년 11개월 만에 최고치를 기록했다.<br>
+			</p>
+		</div>
+	</div>
+
+	<!-- 평당가 주택별 비교 그래프-->
+	<div class="priceTotal">
+		<div class="btnGo" onclick="ChangeTotalTrade()">매매 평당가 주택별 비교 그래프</div>
+		<div class="btnGo" onclick="ChangeTotalRent()">전세 평당가 주택별 비교 그래프</div>
+		<br><br>
+		<p id="totalTitleId" class="subTitle">2020~2021 서울 자치구별 주택별 매매 실거래가 평당가 비교</p>
+		<img id="totalImgId" src="image/tradePriceTotal.png">
+		<br>
+		<p id="totalTextTd" class="info">
+			2020-2021년 주택별 매매 실거래 평당가는 중구를 제외한 모든 자치구에서 아파트 평당가가 월등히 높은 가격을 보였다.<br>
+			이러한 측면에서 다른 주택에 비해 아파트의 선호도가 높고 수요가 많다는 것을 실감할 수 있다.<br>
+			아파트 가격은 강남구가 월등히 높은 양상을 보이며 오피스텔 가격은 노원구가 월등히 낮은 양상을 보였다.<br>
+			아파트를 제외한 오피스텔, 단독다가구, 연립다세대 모두 용산구가 가장 높은 가격을 보였다.<br>
+			용산구는 서울의 중심부이고 부동산 전문가들이 인정하는 향후 모습이 기대되는 지역 1순위이다.<br>
+			오피스텔을 제외한 아파트, 단독다가구, 연립다세대 모두 도봉구가 가장 낮은 가격을 보였다.<br>
+			도봉구는 낮은 가격을 보이는 반면, 지난 1년 동안 서울에서 가장 높은 집값 상승세를 보인 지역이기도 하다.<br>
+			이는 고가 주택에 집중된 규제와 재건축·교통 호재에 대한 기대감이 반영된 결과이다.<br>
+		</p>
+	</div>
+
+	<!--푸터-->
+    <footer>
+    	<p>
+    		서울특별시 성동구 살곶이길 200 한양여자대학교 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    		학과 : 스마트 IT과 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 대표자 : 야심 <br>
+    		학번 : 1901714 | 1901749 | 1902615 | 1901816 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    		채널 : @yasim &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 이메일 : hello.yasim@gmail.com<br>
+            ©야심 &nbsp;&nbsp;&nbsp;&nbsp; COPYRIGHT HYWU YASIM. ALL RIGHTS RESERVED.<br>
+       </p>
+    </footer>
+
+</body>
+</html>

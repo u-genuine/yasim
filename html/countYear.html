@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/countYear.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Gothic&family=Noto+Serif+KR&display=swap" rel="stylesheet">
+
+	<title></title>
+
+	<script type="text/javascript">
+
+	function ChangeApt(){
+		document.getElementById("titleId").innerHTML="2016~2020 서울 아파트 매매 년도별 거래량";
+		document.getElementById("imgId").src = "image/aptCountYear.png";
+		document.getElementById("textId").innerHTML="<p class='info'>최근 5년 중 2016년에 매매 거래량이 약 110000건으로 가장 많았고 점점 하락세를 보이더니<br>2019년에는 약 75000건까지 하락했다. 2020년엔 약 10000건 가량 늘어났다.<br></p>";
+	}
+
+	function ChangeOffi(){
+		document.getElementById("titleId").innerHTML="2016~2020 서울 오피스텔 매매 년도별 거래량";
+		document.getElementById("imgId").src = "image/offiCountYear.png";
+		document.getElementById("textId").innerHTML="<p class='info'>2017-2019년까지의 매매 거래량이 약 11000건 초반으로 비슷한 수치에 머무르다가<br>2020년에 약 15000건으로 늘어났다. 작년에 비해 약 4000건이나 늘어난 셈이다.<br></p>";
+	}
+
+	function ChangeDh(){
+		document.getElementById("titleId").innerHTML="2016~2020 서울 단독다가구 매매 년도별 거래량";
+		document.getElementById("imgId").src = "image/dhCountYear.png";
+		document.getElementById("textId").innerHTML="<p class='info'>2019년까지 매매 거래량이 약 19000건에서 10000건으로 매년 줄어들다가 2020년부터 다시 늘어나고 있다.<br></p>";
+	}
+
+	function ChangeRh(){
+		document.getElementById("titleId").innerHTML="2016~2020 서울 연립다세대 매매 년도별 거래량";
+		document.getElementById("imgId").src = "image/rhCountYear.png";
+		document.getElementById("textId").innerHTML="<p class='info'>2016-2019년까지 약 57500건에서 42500건으로 매매 거래량이 줄었고 2020년에 약 62500건으로 늘어났다.<br>3년간 줄어든 거래량보다 많은 양이 늘어난 셈이다.<br></p>";
+	}
+
+	function ChangeTotal(){
+		document.getElementById("titleId").innerHTML="2016~2020 서울 주택별 거래량 비교";
+		document.getElementById("imgId").src = "image/totalCountYear.png";
+		document.getElementById("textId").innerHTML="<p class='info'>오피스텔과 단독다가구의 매매 거래량은 상승폭과 하락폭의 변화가 크지 않은 반면,<br>아파트는 매년 매매 거래량의 추이 변화가 큰 편이다.<br>연립다세대의 경우 추이 변화가 크지 않았지만 2020년 갑자기 매매 거래량이 급증한 것을 볼 수 있다.<br></p>";
+	}
+
+	</script>
+</head>
+<body>
+	<!--상단바-->
+	<header>
+		<a href="../index.html" class="logo"><img src="../image/logo.png"></a>
+		<nav>
+			<ul>
+				<li><a href="avgPrice.html"><b>평당가 비교</b></a></li>
+				<li><a href="avgPriceMap.html"><b>평당가 지도</b></a></li>
+				<li><a href="avgPriceTrend.html"><b>평당가 시세 트렌드</b></a></li>
+		        <li><a href="countYear.html"><b>년도별 거래량</b></a></li>
+		        <li><a href="countMonth.html"><b>월별 거래량</b></a></li>
+    		</ul>
+    	</nav>
+	</header>
+
+	<!-- 타이틀 -->
+	<p class="title">최근 5년간 서울 주택별 년도별 거래량</p>
+
+	<!-- 년도별 거래량 -->
+	<div class="countYear">
+		<div class="btnGo" onclick="ChangeApt()">아파트 년도별 거래량</div>
+		<div class="btnGo" onclick="ChangeOffi()">오피스텔 년도별 거래량</div>
+		<div class="btnGo" onclick="ChangeDh()">단독다가구 년도별 거래량</div>
+		<div class="btnGo" onclick="ChangeRh()">연립다세대 년도별 거래량</div>
+		<div class="btnGo" onclick="ChangeTotal()">주택별 거래량 비교</div>
+		<br><br>
+		<p id="titleId" class="subTitle">2016~2020 서울 아파트 매매 년도별 거래량</p>
+		<img id="imgId" src="image/aptCountYear.png">
+		<p id="textId" class='info'>
+			최근 5년 중 2016년에 매매 거래량이 약 110000건으로 가장 많았고 점점 하락세를 보이더니<br>
+			2019년에는 약 75000건까지 하락했다. 2020년엔 약 10000건 가량 늘어났다.<br>
+		</p>
+	</div>
+
+	<!--푸터-->
+    <footer>
+    	<p>
+    		서울특별시 성동구 살곶이길 200 한양여자대학교 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    		학과 : 스마트 IT과 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 대표자 : 야심 <br>
+    		학번 : 1901714 | 1901749 | 1902615 | 1901816 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    		채널 : @yasim &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 이메일 : hello.yasim@gmail.com<br>
+            ©야심 &nbsp;&nbsp;&nbsp;&nbsp; COPYRIGHT HYWU YASIM. ALL RIGHTS RESERVED.<br>
+       </p>
+    </footer>
+
+</body>
+</html>

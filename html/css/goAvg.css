@@ -1,0 +1,56 @@
+/*전체*/
+	*{
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+	html, body {
+		background-color: white;
+		height: 100%;
+	}
+	a {
+	    list-style-type: none;
+	    text-decoration: none;
+	    color: black;
+	}
+/*그래프 선택 영역*/
+	.avgPrice {
+		width: 40%;
+		height: 100%;
+		padding-top: 60px;
+		float: left;
+		clear: both;
+		text-align: center;
+		font-family: 'Jua', sans-serif;
+		font-size: 30px;
+		background-color: #DCD6F7;
+	}
+	.avgPriceImg img {
+		width: 80%;
+		border-radius: 30px;
+		box-shadow: 1px 1px 10px 1px gray;
+	}
+	.avgPrice:hover {
+		background: #FFDCB8;
+	}
+/*지도 선택 영역*/
+	.avgPriceMap {
+		width: 60%;
+		height: 100%;
+		padding-top: 60px;
+		display: inline-block;
+		clear: both;
+		text-align: center;
+		font-family: 'Jua', sans-serif;
+		font-size: 30px;
+		background-color: #CCC1FF;
+	}
+	.avgPriceMapImg img {
+		width: 80%;
+		border-radius: 30px;
+		box-shadow: 1px 1px 10px 1px gray;
+	}
+	.avgPriceMap:hover {
+		background: #FFDCB8;
+
+	}

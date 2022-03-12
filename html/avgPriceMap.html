@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/avgPriceMap.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Gothic&family=Noto+Serif+KR&display=swap" rel="stylesheet">
+
+	<title></title>
+
+	<script type="text/javascript">
+
+	// 매매 평당가 지도
+	function ChangeApt(){
+		document.getElementById("titleId").innerHTML="서울 자치구별 아파트 매매 평당가 지도";
+		document.getElementById("mapId").src = "html/aptMap.html";
+	}
+
+	function ChangeOffi(){
+		document.getElementById("titleId").innerHTML="서울 자치구별 오피스텔 매매 평당가 지도";
+		document.getElementById("mapId").src = "html/offiMap.html";
+	}
+
+	function ChangeDh(){
+		document.getElementById("titleId").innerHTML="서울 자치구별 단독다가구 매매 평당가 지도";
+		document.getElementById("mapId").src = "html/dhMap.html";
+	}
+
+	function ChangeRh(){
+		document.getElementById("titleId").innerHTML="서울 자치구별 연립다세대 매매 평당가 지도";
+		document.getElementById("mapId").src = "html/rhMap.html";
+	}
+
+	// 전세 평당가 지도
+	function ChangeAptR(){
+		document.getElementById("titleId").innerHTML="서울 자치구별 아파트 전세 평당가 지도";
+		document.getElementById("mapId").src = "html/aptRMap.html";
+	}
+
+	function ChangeOffiR(){
+		document.getElementById("titleId").innerHTML="서울 자치구별 오피스텔 전세 평당가 지도";
+		document.getElementById("mapId").src = "html/offiRMap.html";
+	}
+
+	function ChangeDhR(){
+		document.getElementById("titleId").innerHTML="서울 자치구별 단독다가구 전세 평당가 지도";
+		document.getElementById("mapId").src = "html/dhRMap.html";
+	}
+
+	function ChangeRhR(){
+		document.getElementById("titleId").innerHTML="서울 자치구별 연립다세대 전세 평당가 지도";
+		document.getElementById("mapId").src = "html/rhRMap.html";
+	}
+
+	</script>
+</head>
+<body>
+	<!--상단바-->
+	<header>
+		<a href="../index.html" class="logo"><img src="../image/logo.png"></a>
+		<nav>
+			<ul>
+				<li><a href="avgPrice.html"><b>평당가 비교</b></a></li>
+				<li><a href="avgPriceMap.html"><b>평당가 지도</b></a></li>
+				<li><a href="avgPriceTrend.html"><b>평당가 시세 트렌드</b></a></li>
+		        <li><a href="countYear.html"><b>년도별 거래량</b></a></li>
+		        <li><a href="countMonth.html"><b>월별 거래량</b></a></li>
+    		</ul>
+    	</nav>
+	</header>
+
+	<!-- 타이틀 -->
+	<p class="title">최근 1년간 서울 자치구별 주택별 평당가 지도</p>
+	<p class="sub">* 색상이 진할 수록 평당가가 높은 지역이며, 색상이 연할 수록 평당가가 낮은 지역입니다.</p>
+
+	<!-- 평당가 지도 -->
+	<div class="map">
+		<div class="btnGo" onclick="ChangeApt()">아파트 매매</div>
+		<div class="btnGo" onclick="ChangeOffi()">오피스텔 매매</div>
+		<div class="btnGo" onclick="ChangeDh()">단독다가구 매매</div>
+		<div class="btnGo" onclick="ChangeRh()">연립다세대 매매</div>
+		<br><br>
+		<div class="btnGo" onclick="ChangeAptR()">아파트 전세</div>
+		<div class="btnGo" onclick="ChangeOffiR()">오피스텔 전세</div>
+		<div class="btnGo" onclick="ChangeDhR()">단독다가구 전세</div>
+		<div class="btnGo" onclick="ChangeRhR()">연립다세대 전세</div>
+		<br><br>
+		<p id="titleId" class="subTitle">서울 자치구별 아파트 평당가 지도</p><br>
+		<iframe id="mapId" src="html/aptMap.html" width="1000px" height="500px" frameborder="0" scrolling="no">아파트 평당가 지도</iframe>
+	</div>
+
+	<!--푸터-->
+    <footer>
+    	<p>
+    		서울특별시 성동구 살곶이길 200 한양여자대학교 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    		학과 : 스마트 IT과 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 대표자 : 야심 <br>
+    		학번 : 1901714 | 1901749 | 1902615 | 1901816 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    		채널 : @yasim &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 이메일 : hello.yasim@gmail.com<br>
+            ©야심 &nbsp;&nbsp;&nbsp;&nbsp; COPYRIGHT HYWU YASIM. ALL RIGHTS RESERVED.<br>
+       	</p>
+    </footer>
+
+</body>
+</html>

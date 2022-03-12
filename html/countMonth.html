@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/countMonth.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Gothic&family=Noto+Serif+KR&display=swap" rel="stylesheet">
+
+	<title></title>
+
+	<script type="text/javascript">
+
+	function ChangeApt(){
+		document.getElementById("titleId").innerHTML="2016~2020 서울 아파트 매매 월별 거래량";
+		document.getElementById("imgId").src = "image/aptCountMonth.png";
+		document.getElementById("textId").innerHTML="<p class='info'>최근 5년 동안 서울 아파트 매매 거래가 가장 많았던 달은 2020년 6월이며, 거래가 가장 적었던 달은 2019년 2월이다.<br>2016년부터 2020년 사이 매년 아파트 거래량이 가장 많은 달은 5~8월 사이이다.<br></p>";
+	}
+
+	function ChangeOffi(){
+		document.getElementById("titleId").innerHTML="2016~2020 서울 오피스텔 매매 월별 거래량";
+		document.getElementById("imgId").src = "image/offiCountMonth.png";
+		document.getElementById("textId").innerHTML="<p class='info'>최근 5년 동안 서울 오피스텔 매매 거래가 가장 많았던 달은 2020년 12월이며, 거래가 가장 적었던 달은 2019년 2월이다.<br></p>";
+	}
+
+	function ChangeDh(){
+		document.getElementById("titleId").innerHTML="2016~2020 서울 단독다가구 매매 월별 거래량";
+		document.getElementById("imgId").src = "image/dhCountMonth.png";
+		document.getElementById("textId").innerHTML="<p class='info'>최근 5년 동안 서울 단독다가구 매매 거래가 가장 많았던 달은 2016년 6월이며, 거래가 가장 적었던 달은 2019년 2월이다.<br>2016년의 경우 거래량이 1700~2000건을 웃도는 경우가 많았으며, 2020년의 경우 700~1000건을 웃도는 경우가 많았다.<br>따라서, 최근 단독다가구의 거래량은 이전에 비해 대체적으로 현저히 줄어든 것이 확인되었다.<br></p>";
+	}
+
+	function ChangeRh(){
+		document.getElementById("titleId").innerHTML="2016~2020 서울 연립다세대 매매 월별 거래량";
+		document.getElementById("imgId").src = "image/rhCountMonth.png";
+		document.getElementById("textId").innerHTML="<p class='info'>최근 5년 동안 서울 연립다세대 매매 거래가 가장 많았던 달은 2020년 7월이며, 거래가 가장 적었던 달은 2019년 2월이다.<br></p>";
+	}
+		
+	</script>
+</head>
+<body>
+	<!--상단바-->
+	<header>
+		<a href="../index.html" class="logo"><img src="../image/logo.png"></a>
+		<nav>
+			<ul>
+				<li><a href="avgPrice.html"><b>평당가 비교</b></a></li>
+				<li><a href="avgPriceMap.html"><b>평당가 지도</b></a></li>
+				<li><a href="avgPriceTrend.html"><b>평당가 시세 트렌드</b></a></li>
+		        <li><a href="countYear.html"><b>년도별 거래량</b></a></li>
+		        <li><a href="countMonth.html"><b>월별 거래량</b></a></li>
+    		</ul>
+    	</nav>
+	</header>
+
+	<!-- 타이틀 -->
+	<p class="title">최근 5년간 서울 주택별 월별 거래량</p>
+
+	<!-- 월별 거래량 -->
+	<div class="countMonth">
+		<div class="btnGo" onclick="ChangeApt()">아파트 월별 거래량</div>
+		<div class="btnGo" onclick="ChangeOffi()">오피스텔 월별 거래량</div>
+		<div class="btnGo" onclick="ChangeDh()">단독다가구 월별 거래량</div>
+		<div class="btnGo" onclick="ChangeRh()">연립다세대 월별 거래량</div>
+		<br><br>
+		<p id="titleId" class="subTitle">2016~2020 서울 아파트 매매 월별 거래량</p>
+		<img id="imgId" src="image/aptCountMonth.png">
+		<p id="textId" class="info">
+			최근 5년 동안 서울 아파트 매매 거래가 가장 많았던 달은 2020년 6월이며, 거래가 가장 적었던 달은 2019년 2월이다.<br>
+			2016년부터 2020년 사이 매년 아파트 거래량이 가장 많은 달은 5~8월 사이이다.<br>
+		</p>
+	</div>
+
+	<!-- 거래량 원인 -->
+	<p class="result"><span style="background-color:#E4E98C">
+		*아파트, 오피스텔, 단독다가구, 연립다세대 모든 차트에서 공통적으로 2019년 2월의 거래량이 가장 적었다.<br>
+		이는 <span id="cause">2018년 9·13 부동산 대책</span> 이후 모든 부동산 거래량이 급감했던 것의 결과이다.<br>
+	</span></p>
+
+	<!--푸터-->
+    <footer>
+    	<p>
+    		서울특별시 성동구 살곶이길 200 한양여자대학교 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    		학과 : 스마트 IT과 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 대표자 : 야심 <br>
+    		학번 : 1901714 | 1901749 | 1902615 | 1901816 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    		채널 : @yasim &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 이메일 : hello.yasim@gmail.com<br>
+            ©야심 &nbsp;&nbsp;&nbsp;&nbsp; COPYRIGHT HYWU YASIM. ALL RIGHTS RESERVED.<br>
+       </p>
+    </footer>
+
+</body>
+</html>
